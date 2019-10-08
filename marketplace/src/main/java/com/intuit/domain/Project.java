@@ -32,36 +32,44 @@ public class Project {
         private String projectId;
         private String projectName;
 
-        public void setProjectId(String projectId) {
+        public ProjectBuilder setProjectId(String projectId) {
             this.projectId = projectId;
+            return this;
         }
 
-        public void setProjectName(String projectName) {
+        public ProjectBuilder setProjectName(String projectName) {
             this.projectName = projectName;
+            return this;
         }
 
-        public void setType(String type) {
+        public ProjectBuilder setType(String type) {
             this.type = type;
+            return this;
         }
 
-        public void setStatus(ProjectStatus status) {
+        public ProjectBuilder setStatus(ProjectStatus status) {
             this.status = status;
+            return this;
         }
 
-        public void setBuyerId(String buyerId) {
+        public ProjectBuilder setBuyerId(String buyerId) {
             this.buyerId = buyerId;
+            return this;
         }
 
-        public void setSellerId(String sellerId) {
+        public ProjectBuilder setSellerId(String sellerId) {
             this.sellerId = sellerId;
+            return this;
         }
 
-        public void setLowestBidPrice(Double lowestBidPrice) {
+        public ProjectBuilder setLowestBidPrice(Double lowestBidPrice) {
             this.lowestBidPrice = lowestBidPrice;
+            return this;
         }
 
-        public void setPostedDate(Date postedDate) {
+        public ProjectBuilder setPostedDate(Date postedDate) {
             this.postedDate = postedDate;
+            return this;
         }
 
         private String type;
